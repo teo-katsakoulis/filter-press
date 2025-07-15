@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  min-width: 290px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: #555;
+  letter-spacing: 0.5px;
+}
+
+#user-list {
+  list-style: none;
+  padding-left: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#user-list li {
+  padding: 6px 10px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#user-list li:last-child {
+  border-bottom: none;
+}
+
+.remove-user {
+  background: #e74c3c;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.remove-user:hover {
+  background: #d7382f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#new-user,
+#add-user {
+  height: 32px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#new-user {
+  width: calc(100% - 90px);
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 32px;
+}
+
+#add-user {
+  width: 70px;
+  margin-left: 10px;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  height: 32px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#add-user:hover {
+  background-color: #2980b9;
+}
+
+.comment-label {
+  font-size: 14px;
+  color: #555;
+}
+
+#length-threshold {
+  width: calc(100% - 90px);
+  height: 22px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #444;
+  margin-top: 5px;
+}
+
+#no-commento-msg {
+  display: none;
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

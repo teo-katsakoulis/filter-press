@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Commento Filter",
+  "version": "1.0.0",
+  "description": "This extension runs locally, does not collect or transmit any personal data, and is used solely to enhance readability of public comment threads that are using Commento.",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["*://*/*"],
+  "action": {
+    "default_icon": "icons/icon48.png",
+    "default_popup": "html/popup.html",
+    "default_title": "CommentoFilter"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["js/content.js"],
+      "css": ["css/content.css"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

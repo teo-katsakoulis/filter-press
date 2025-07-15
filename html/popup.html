@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Block Users</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
+  </head>
+  <body>
+    <div id="no-commento-msg">
+      This webpage does not appear to use Commento comments.
+    </div>
+    <h2>Blocked Users</h2>
+    <ul id="user-list"></ul>
+    <input id="new-user" type="text" placeholder="User name..." />
+    <button id="add-user">Add</button>
+    <h3>Comment Length Filter</h3>
+    <label for="length-threshold" class="comment-label"
+      >Max comment characters length:</label
+    >
+    <input id="length-threshold" type="number" min="100" value="5000" />
+    <script src="../js/popup.js"></script>
+  </body>
+</html>
