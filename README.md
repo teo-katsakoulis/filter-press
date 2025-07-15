@@ -1,4 +1,4 @@
-# Commento Comment Filter
+# Commento Filter
 
 A Chrome extension to improve readability of Commento comment threads by blocking comments from specific users and filtering excessively long comments (often bots). Users can customize blocked usernames and set a maximum comment character length threshold.
 
